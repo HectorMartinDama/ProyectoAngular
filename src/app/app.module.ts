@@ -24,6 +24,7 @@ import { AngularFireModule } from "@angular/fire/compat";
 import { AngularFireAuthModule } from "@angular/fire/compat/auth";
 import { environment } from "../environments/environment";
 import {MatMenuModule} from "@angular/material/menu";
+import {MatGridListModule} from "@angular/material/grid-list";
 
 
 @NgModule({
@@ -53,6 +54,7 @@ import {MatMenuModule} from "@angular/material/menu";
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFireAuthModule,
     MatMenuModule,
+    MatGridListModule,
 
   ],
   providers: [],

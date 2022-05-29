@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MainNavComponent } from './main-nav/main-nav.component';
@@ -25,6 +24,8 @@ import { AngularFireAuthModule } from "@angular/fire/compat/auth";
 import { environment } from "../environments/environment";
 import {MatMenuModule} from "@angular/material/menu";
 import {MatGridListModule} from "@angular/material/grid-list";
+import { SendEmailComponent } from './auth/send-email/send-email.component';
+import {AuthService} from "./auth/services/auth.service";
 
 
 @NgModule({
@@ -33,7 +34,8 @@ import {MatGridListModule} from "@angular/material/grid-list";
     MainNavComponent,
     FooterComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    SendEmailComponent
   ],
   imports: [
     BrowserModule,
